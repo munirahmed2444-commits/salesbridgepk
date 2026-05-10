@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Vault | SBG</title>
+    <style>
+        :root { --purple: #9d50bb; --bg: #0f0c29; }
+        body { background: var(--bg); color: white; font-family: 'Inter', sans-serif; padding: 40px 5%; }
+        .back { color: var(--purple); text-decoration: none; font-size: 12px; letter-spacing: 2px; }
+        
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            margin-top: 40px; 
+        }
+
+        .project-card { 
+            background: rgba(255,255,255,0.03); 
+            border: 1px solid rgba(157, 80, 187, 0.3); 
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+
+        video { width: 100%; display: block; background: #000; }
+        .info { padding: 15px; }
+        h3 { margin: 0; color: var(--purple); font-size: 18px; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back">← RETURN TO TERMINAL</a>
+    <h1 style="font-size: 3rem;">Selected Builds</h1>
+
+    <div class="video-grid">
+        <div class="project-card">
+            <video autoplay loop muted playsinline>
+                <source src="1000078425.mp4" type="video/mp4">
+            </video>
+            <div class="info"><h3>High-End 3D Interface</h3></div>
+        </div>
+
+        <div class="project-card">
+            <video autoplay loop muted playsinline>
+                <source src="1000078437.mp4" type="video/mp4">
+            </video>
+            <div class="info"><h3>Animated Conversion Funnel</h3></div>
+        </div>
+
+        <div class="project-card">
+            <video autoplay loop muted playsinline>
+                <source src="1000078697.mp4" type="video/mp4">
+            </video>
+            <div class="info"><h3>Luxury Real Estate Terminal</h3></div>
+        </div>
+    </div>
+</body>
+</html>
