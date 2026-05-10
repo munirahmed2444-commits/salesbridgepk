@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Bridge Global | Ali Munir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --purple: #9d50bb; --bg: #0f0c29; --glass: rgba(157, 80, 187, 0.1); --border: rgba(157, 80, 187, 0.4); }
+        
+        body { 
+            margin: 0; background: #0f0c29; color: #fff; 
+            font-family: 'Inter', sans-serif; scroll-behavior: smooth;
+            background: linear-gradient(to bottom, #0f0c29, #1a1a2e);
+        }
+        
+        /* NAVIGATION */
+        nav { 
+            position: fixed; top: 0; width: 100%; display: flex; 
+            justify-content: flex-end; padding: 15px 5%; box-sizing: border-box; 
+            background: rgba(15, 12, 41, 0.9); backdrop-filter: blur(10px); z-index: 1000; 
+            border-bottom: 1px solid var(--border);
+        }
+        nav a { 
+            color: white; text-decoration: none; margin-left: 15px; font-size: 10px; 
+            letter-spacing: 1px; text-transform: uppercase; border: 1px solid var(--border); 
+            padding: 6px 12px; transition: 0.3s; 
+        }
+        nav a:hover { background: var(--purple); }
+
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 100; background: #25d366; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+        .whatsapp-float img { width: 28px; }
+
+        /* REDUCED GAPS: Removed min-height 100vh */
+        section { 
+            padding: 60px 10%; 
+            display: flex; flex-direction: column; 
+            border-bottom: 1px solid rgba(157, 80, 187, 0.1); 
+        }
+
+        #home { padding-top: 140px; min-height: 60vh; }
+
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--purple); margin: 0; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #fff; margin-bottom: 30px; }
+        .ceo-tag { font-weight: bold; letter-spacing: 4px; text-transform: uppercase; color: #aaa; font-size: 11px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+        .card { background: var(--glass); border: 1px solid var(--border); padding: 25px; border-radius: 4px; }
+        .card h3 { color: var(--purple); font-size: 1.8rem; margin: 0; }
+
+        /* WORKFLOW & STEPS */
+        .workflow-img { width: 100%; max-width: 700px; border: 1px solid var(--purple); margin-bottom: 40px; border-radius: 4px; }
+        
+        .steps-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .step { flex: 1; min-width: 200px; background: rgba(255,255,255,0.03); border-left: 3px solid var(--purple); padding: 15px; }
+        .step span { color: var(--purple); font-weight: bold; font-size: 12px; text-transform: uppercase; }
+        .step p { font-size: 13px; margin: 5px 0 0 0; color: #ccc; }
+
+        @media (max-width: 768px) { h1 { font-size: 2.2rem; } section { padding: 40px 5%; } nav { justify-content: center; padding: 10px; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Main</a>
+        <a href="#experience">Experience</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#reviews">Reviews</a>
+        <a href="projects.html">Projects</a>
+        <a href="booking.html" style="background: var(--purple); border:none;">Book Now</a>
+    </nav>
+
+    <a href="https://wa.me/923037403568" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+    </a>
+
+    <section id="home">
+        <span class="ceo-tag">Ali Munir | CEO</span>
+        <h1>Sales Bridge <br>Global</h1>
+        <p style="max-width: 550px; color: #ccc; line-height: 1.6; margin-top: 20px;">We specialize in high-end web development and conversion-focused systems. Scaling luxury brands through surgical strategy.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience & Impact</h2>
+        <div class="grid">
+            <div class="card"><h3>2+ Years</h3><p>High-End Web Dev & 3D Design.</p></div>
+            <div class="card"><h3>50+</h3><p>Global Satisfied Clients.</p></div>
+            <div class="card"><h3>509+</h3><p>Leads generated for Real Estate.</p></div>
+            <div class="card"><h3>1.1x</h3><p>Pacing increase in retention.</p></div>
+        </div>
+    </section>
+
+    <section id="workflow">
+        <h2>Our Workflow</h2>
+        <img src="1000077198.jpg" alt="Workflow" class="workflow-img">
+        
+        <h3 style="color: var(--purple); margin-bottom: 20px;">Execution Lifecycle</h3>
+        <div class="steps-container">
+            <div class="step">
+                <span>01. Planning</span>
+                <p>Auditing your current bottleneck and defining technical requirements.</p>
+            </div>
+            <div class="step">
+                <span>02. Strategy</span>
+                <p>Mapping the "Straight Line" sales funnel and 3D visual direction.</p>
+            </div>
+            <div class="step">
+                <span>03. Development</span>
+                <p>High-speed coding with Tailwind, JS, and performance optimization.</p>
+            </div>
+            <div class="step">
+                <span>04. Delivery</span>
+                <p>Final testing, launch, and handoff for automated revenue scaling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Market Authority</h2>
+        <div class="grid">
+            <div class="card">
+                <p style="font-style: italic;">"The 3D animations set our brand apart. Truly surgical work."</p>
+                <small style="color: var(--purple);">— Luxury Real Estate Client</small>
+            </div>
+            <div class="card">
+                <p style="font-style: italic;">"Ali's vision for lead qualification saved us hours of dead calls."</p>
+                <small style="color: var(--purple);">— Automotive Studio</small>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 40px 10%; font-size: 10px; color: #555; text-transform: uppercase; letter-spacing: 2px;">
+        © 2026 Sales Bridge Global. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
