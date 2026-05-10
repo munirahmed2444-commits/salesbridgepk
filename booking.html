@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Session | Sales Bridge Global</title>
+    <style>
+        body { background: #0f0c29; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .form-container { width: 100%; max-width: 450px; padding: 30px; border: 1px solid #9d50bb; background: rgba(0,0,0,0.4); box-sizing: border-box; }
+        h2 { color: #9d50bb; margin-top: 0; }
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; background: #000; border: 1px solid #9d50bb; color: white; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; background: #9d50bb; border: none; color: white; font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 10px; }
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #888; text-decoration: none; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Surgical Strategy Audit</h2>
+        <input type="text" id="bizName" placeholder="Business Name">
+        <input type="text" id="phone" placeholder="WhatsApp Number">
+        <textarea id="problem" placeholder="What is your biggest bottleneck?" rows="3"></textarea>
+        <textarea id="details" placeholder="Business Niche & Revenue Goals" rows="3"></textarea>
+        <button onclick="sendLead()">Book via WhatsApp</button>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+
+    <script>
+        function sendLead() {
+            const biz = document.getElementById('bizName').value;
+            const ph = document.getElementById('phone').value;
+            const prob = document.getElementById('problem').value;
+            const det = document.getElementById('details').value;
+            if(!biz || !ph) { alert("Please fill the main fields."); return; }
+            const msg = `*NEW STRATEGY SESSION REQUEST*%0A%0A*Business:* ${biz}%0A*WA:* ${ph}%0A*Problem:* ${prob}%0A*Goals:* ${det}`;
+            window.open(`https://wa.me/923037403568?text=${msg}`, '_blank');
+        }
+    </script>
+</body>
+</html>
