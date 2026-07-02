@@ -28,6 +28,27 @@
         }
         nav a:hover { background: var(--purple); }
 
+        /* HERO CTA BUTTON */
+        .hero-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background: var(--purple);
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 12px 24px;
+            border: 1px solid var(--purple);
+            transition: 0.3s;
+            width: max-content;
+            font-weight: bold;
+        }
+        .hero-btn:hover {
+            background: transparent;
+            border: 1px solid var(--purple);
+        }
+
         .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 100; background: #25d366; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
         .whatsapp-float img { width: 28px; }
 
@@ -56,7 +77,12 @@
         .step span { color: var(--purple); font-weight: bold; font-size: 12px; text-transform: uppercase; }
         .step p { font-size: 13px; margin: 5px 0 0 0; color: #ccc; }
 
-        @media (max-width: 768px) { h1 { font-size: 2.2rem; } section { padding: 40px 5%; } nav { justify-content: center; padding: 10px; } }
+        @media (max-width: 768px) { 
+            h1 { font-size: 2.2rem; } 
+            section { padding: 40px 5%; } 
+            nav { justify-content: center; padding: 10px; flex-wrap: wrap; gap: 6px; } 
+            nav a { margin-left: 0; margin: 2px 3px; font-size: 9px; padding: 5px 8px; }
+        }
     </style>
 </head>
 <body>
@@ -78,6 +104,7 @@
         <span class="ceo-tag">Ali Munir | CEO</span>
         <h1>Sales Bridge <br>Global</h1>
         <p style="max-width: 550px; color: #ccc; line-height: 1.6; margin-top: 20px;">We specialize in high-end web development and conversion-focused systems. Scaling luxury brands through surgical strategy.</p>
+        <a href="booking.html" class="hero-btn">Book Now</a>
     </section>
 
     <section id="experience">
